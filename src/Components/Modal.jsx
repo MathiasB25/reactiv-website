@@ -3,8 +3,8 @@ import { motion } from "framer-motion"
 export default function Modal({ children, handleClose }) {
     return (
         <motion.div 
-            className={"fixed inset-0 w-screen h-screen flex items-center justify-center z-10"}
-            style={{ position: "fixed", background: "rgba(0,0,0,.9)" }}
+            className={"fixed inset-0 flex items-center justify-center"}
+            style={{ position: "fixed", background: "rgba(0,0,0,.9)", width: '100vw', height: '100vh', zIndex: 10 }}
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             exit={{ opacity: 0 }}
