@@ -4,6 +4,7 @@ export default function Document() {
     return (
         <Html lang="en">
             <Head>
+                <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.0/css/sharp-regular.css" />
                 <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.0/css/all.css" />
             </Head>
             <body>
