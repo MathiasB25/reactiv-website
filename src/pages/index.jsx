@@ -69,13 +69,19 @@ export default function Home() {
                 return;
             }
             setLoading(false);
-            setShowModal(true);
+            handleShowModal();
         }, 800);
+    }
+
+    const handleShowModal = () => {
+        setShowModal(true);
+        document.body.style.overflow = 'hidden';
     }
 
     const handleCloseModal = () => {
         setShowModal(false);
         setPackageId("");
+        document.body.style.overflow = 'visible';
     }
 
     const handleShowTracking = () => {
